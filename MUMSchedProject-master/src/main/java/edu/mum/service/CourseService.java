@@ -32,7 +32,7 @@ import edu.mum.repository.CourseRepository;
 //}
 
 @Service
-public class CourseService  {
+public class CourseService implements ICourseService {
 	
 	
 	@Autowired
@@ -63,15 +63,21 @@ public class CourseService  {
 		return this.courseRepository.coursesWithPrerequisite(id);
 	}
 	
-	public void updateCourse(String title, int courseId, Course Prerequisite, Long id) {
-		courseRepository.update(title, courseId, Prerequisite, id);
-	}
-	
-	
+		
 
 	public List<Course> findCourseByTitleAndID(Long id, String title){		
 		return this.courseRepository.findCourseByTitleAndID(id, title);
 	}
+
+
+	@Override
+	public List<Course> getCoursesWithNoPrerequisite() {
+		return this.courseRepository.getCoursesWithNoPrerequisite();
+	}
+
+
+	
+	
 	
 
 }
