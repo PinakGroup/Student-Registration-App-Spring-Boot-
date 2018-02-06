@@ -17,26 +17,26 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+	</head>
 <body>
 	<div th:replace="fragments/header :: header-css"></div>
 	<div th:replace="fragments/header :: header"></div>
 	<div class="container">
 		<h4>
-			<!-- <a href="/admin/schedule/list"><i class="fa fa-hand-o-up">Schedule
-					List</i></a> -->
-		</h4><a href="/admin/schedule/list"><i>Schedule
-					List</i></a>
+			
+		<a href="/admin/schedule/list"><i>Schedule
+					List</i></a></h4>
 		<br />
 		<h4>
-			Schedule <small> <i class="ace-icon fa fa-angle-double-right">Create</i>
-			</small>
+			 Create Schedule
+			
 		</h4>
 		<hr />
-		<div class="well form-group">
+		<div class="addForm">
 			<form action="#" th:action="@{/admin/schedule/create}" method="post">
 				<div class="entrys">
-					Select Entry <br /> <br /> <select class="form-control"
+					<h4>Select Entry</h4>  <select class="form-control1"
 						name="entry">
 
 						<option th:each="entry : ${entries}"
@@ -44,7 +44,8 @@
 
 					</select>
 				</div>
-				<br /> <br /> <input class="btn btn-primary" type="submit"
+			
+				<input class="btn btn-primary" type="submit"
 					value="CreateSchedule" />
 			</form>
 		</div>

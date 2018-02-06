@@ -55,12 +55,18 @@ body, html {
 
 .btn-primary {
 	display: block;
-	margin: 0 auto;
+	margin: 20px auto;
 	/* width: 25%; */
 }
 
 .form-control {
 	background-color: #b6c5de;
+	
+}
+.form-control1 {
+	background-color: #b6c5de;
+	width:200%;
+	height:30px;
 }
 
 .form-control:hover {
