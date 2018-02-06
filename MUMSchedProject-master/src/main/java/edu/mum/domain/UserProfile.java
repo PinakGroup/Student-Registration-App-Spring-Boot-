@@ -28,22 +28,16 @@ public class UserProfile {
 	 
 	@Id
 	 @GeneratedValue(strategy=GenerationType.AUTO)
-	 private Long id;
-	 @Size(min=4 ,max=50)
+	 private Long id;	
 	 private String firstName;
-	 @Size(min=4 ,max=50)
 	 private String lastName;
-	 @Size(min=4 ,max=50 )
-	// @Unique(service = UserProfileService.class, fieldName = "userName", message = "{field.unique.violation}")
 	 private String userName;
 	 private String password;
 	 @Transient
-	 //@NotNull
 	 private String confirmpassword;
 	 @ManyToMany(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
 	 @Fetch(value=FetchMode.SUBSELECT)
 	 private List<Role> roles=new ArrayList<Role>() ;
-	 @Email
 	 private String email;
 	 private String userStatus;
 	 private int isActive;
@@ -76,9 +70,7 @@ public class UserProfile {
 	public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
-	/*@NotNull
-	 @Past
-	 @DateTimeFormat(pattern = "dd/MM/yyyy")*/
+	
      private Date birthdate;
 	 
 	public Date getBirthdate() {
