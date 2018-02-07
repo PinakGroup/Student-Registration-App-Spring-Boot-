@@ -1,0 +1,30 @@
+
+
+.body-style {
+	background: #43cea2;
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+	background: linear-gradient(to right, #185a9d, #43cea2);
+	background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+.panel-default {
+	margin-top: 50px;
+	background: #43cea2;
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+	background: linear-gradient(to right, #185a9d, #43cea2);
+	border: 2px solid lightblue;
+	border-radius: 25px;
+}
+
+.header {
+	text-align: center;
+	display: block;
+}
+.table{
+	width: 50%;
+	margin: 30px auto;
+	border-style: solid;
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
