@@ -75,7 +75,9 @@ public class CourseService implements ICourseService {
 		return this.courseRepository.getCoursesWithNoPrerequisite();
 	}
 
-
+	public Course getCourseByName(String courseName) {
+		return courseRepository.findCourseByTitle(courseName);
+	}
 	
 	
 	

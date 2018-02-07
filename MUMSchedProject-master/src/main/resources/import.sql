@@ -1,37 +1,36 @@
 
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (41,'1234-12-12','muller@gmail.com','Mulugeta',0,'Bisrat','$2a$10$GcoGc6X9h/HWoD7a5gNtXuWHpHml.u.RtdCxa.ELYpWnLaQvGnodi','muller',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (1,'1990-12-12','merivbaba@gmail.com','Meron',0,'meron','$2a$10$5uwDCD2zXR93c1aBfunJ4ODoceL0OY3QpzRvD.2XVLEWng9NWCV52','meron','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (1,'1990-12-12','merivbaba@gmail.com','Meron',0,'meron','$2a$10$5uwDCD2zXR93c1aBfunJ4ODoceL0OY3QpzRvD.2XVLEWng9NWCV52','meron','Active');
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (11,'1990-02-07','renuka@mum.edu','Renuka',0,'Renuka','$2a$10$R799UMnY2YVZnHFddJMbhOxR6HcBLiDZoTsZvKspHrIPm6ORsZBZe','renuka','Active');
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (12,'1990-12-12','salek@gmail.com','Payman',0,'Salek','salek','salek',NULL);
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (13,'1999-09-09','tina@gmail.cm','Tina',0,'Chung','tinaa','tinaa',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (14,'1950-10-02','murdula@mum.edu','Murdula',0,'Murdula','$2a$10$f.2UdF08d3DXIlQHsJWKJOcbsbN.xb7pqTarWBKp9HoEVjPhfhoHe','murdula','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (14,'1950-10-02','murdula@mum.edu','Murdula',0,'Murdula','$2a$10$f.2UdF08d3DXIlQHsJWKJOcbsbN.xb7pqTarWBKp9HoEVjPhfhoHe','murdula','Active');
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (15,'1950-10-02','brune@mum.edu','Brune',0,'Brune','$2a$10$WlGtVq/w8dwbgQjuS/1r1uxoKxmvaqfLxmSvPYiUEqGXGQajPVp5W','brune','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (17,'1950-10-02','assaad@mum.edu','Assaad',0,'Assaad','$2a$10$/TFbW3PF.sAYMjQjegeaHOJ/bPgUhfEDXeFuC3NuP8rH3wzyEd4Qm','assaad','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (17,'1950-10-02','assaad@mum.edu','Assaad',0,'Assaad','$2a$10$/TFbW3PF.sAYMjQjegeaHOJ/bPgUhfEDXeFuC3NuP8rH3wzyEd4Qm','assaad','Active');
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (19,'1960-10-03','loo@mum.edu','Habete',0,'Chung','$2a$10$0gATt1asVpVvI2QpR/dB.eG8S55mF.L8x7w8q1AZVrRWmx92j/WSS','habete','Active');
 INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (20,'1950-10-02','brune@mum.edu','Brune',0,'Brune','$2a$10$Of2LeD5/T2vAvwKDjZPjrOtb2Mh62MKqTI5WY3yNLs2uFVBdj0kAK','brune1','Active');
 
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (23,'1945-10-26','mainLee@mum.edu','MainLee',0,'Leeeeeee','$2a$10$Tugd6udIg3OQjq22o08HPOlACBsNUW95ieEYEyxnsoJiL90gcPD1i','mainLee','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (24,'1990-02-07','renuka@mum.edu','Renuka',0,'Renuka','$2a$10$IsYaAqYuF/nMyNq7zkV2Wef0n51xLcTgpmUk4bqMoF7GZ4kCF3802','renuka',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (25,'1950-10-02','brune@mum.edu','Brune',0,'Brune','$2a$10$RRkiFBk76Y1ZKw4MKuSLZeSOXx3OvBkcAbZmmv/VZ0Mj//rDxShEy','brune',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (26,'1960-10-03','loo@mum.edu','Habete',0,'Chung','$2a$10$ll3RbKxAydQJzJgoFMz.4O90b8p6MutPZur.sX9ulLkFUmhpx9IHq','habete',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (27,'2017-10-09','obina@mum.edu','Obinamakito',0,'makitoma','$2a$10$XN6hpL9fdArbbac8QEv7nelbQVmxtmECbl8bcjAaGu2ylAhoKrThm','obina',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (28,'2017-10-30','payman@mum.edu','Payman',0,'saleke','$2a$10$mmQITMbHPSNA6LKH9N.6nO8Z59e9KbfCT.oIz/W9sdQGvIgMNDyqu','payman','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (29,'2017-10-09','obina@mum.edu','Obinamakito',0,'makitoma','$2a$10$VRsgRaUvu/fsI3J1I9puHODUJgyOXZZnnREfaH4zSBiXuIX3P/6mG','obina',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (30,'1945-10-26','mainLee@mum.edu','MainLee',0,'Leeeeeee','$2a$10$Yrw54zSo45aLi50Rj9Ibueoy1iWCsRMGvT9ccjfWsOvnrz5ZI/oFC','mainLee',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (31,'1950-10-02','brune@mum.edu','Brune',0,'Brune','$2a$10$1VfDQSSd1wPzEy4baf78Qev/MHDpUpTFHjgwjh9PRBaEmKOSwIGo6','brune1',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (32,'2017-10-04','lester@mum.edu','Lester',0,'lester','$2a$10$AbqtZ1TyKypilCmIqwTCX.aG7RGc4G5f4YptsK2kq5KQ9zGwoXXhq','lester','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (33,'2017-10-10','lerman@mum.edu','Lerman',0,'Lerman','$2a$10$1RzKJ2o5wdK9l6Fcn.N21uxXSCnn0mT14Tct//zrtz3qNZT4SUx1G','lerman','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (34,'1950-10-02','levie@mum.edu','Levie',0,'Levie','$2a$10$z7R8heG7QX5.dp99D6DCkOuFNqvBdKY/9XYRqeC/bqT5FADTqUXPq','levie','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (35,'2017-10-10','tina@gmail.cm','TinaLee',0,'Chung','$2a$10$9ADRNyaP1DKAbJLmhpO54ud72cfm5qwj.fx0q.8830ynxd40EQ85q','tinaa','Active');
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (36,'1945-10-26','mainLee@mum.edu','MainLee',0,'Leeeeeee','$2a$10$5gTPw/l0sXAYUs9ca21HHuOxgFpoq8HrwySH0wzXiwKWqgPgZAkV6','mainLee',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (37,'2017-10-09','obina@mum.edu','Obinamakito',0,'makitoma','$2a$10$/TWwhDhUkvffVBjgGVBQRObnS7gRSUikpMndApVY5njckxSKQcIxu','obina',NULL);
-#INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (38,'1950-10-02','levie@mum.edu','Levie',0,'Levie','$2a$10$a19zFVXFen/5mzpVFqrklOg50gpryat.zSHssdV/fycwx44iU2U/6','levie',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (23,'1945-10-26','mainLee@mum.edu','MainLee',0,'Leeeeeee','$2a$10$Tugd6udIg3OQjq22o08HPOlACBsNUW95ieEYEyxnsoJiL90gcPD1i','mainLee','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (24,'1990-02-07','renuka@mum.edu','Renuka',0,'Renuka','$2a$10$IsYaAqYuF/nMyNq7zkV2Wef0n51xLcTgpmUk4bqMoF7GZ4kCF3802','renuka',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (25,'1950-10-02','brune@mum.edu','Brune',0,'Brune','$2a$10$RRkiFBk76Y1ZKw4MKuSLZeSOXx3OvBkcAbZmmv/VZ0Mj//rDxShEy','brune',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (26,'1960-10-03','loo@mum.edu','Habete',0,'Chung','$2a$10$ll3RbKxAydQJzJgoFMz.4O90b8p6MutPZur.sX9ulLkFUmhpx9IHq','habete',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (27,'2017-10-09','obina@mum.edu','Obinamakito',0,'makitoma','$2a$10$XN6hpL9fdArbbac8QEv7nelbQVmxtmECbl8bcjAaGu2ylAhoKrThm','obina',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (28,'2017-10-30','payman@mum.edu','Payman',0,'saleke','$2a$10$mmQITMbHPSNA6LKH9N.6nO8Z59e9KbfCT.oIz/W9sdQGvIgMNDyqu','payman','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (29,'2017-10-09','obina@mum.edu','Obinamakito',0,'makitoma','$2a$10$VRsgRaUvu/fsI3J1I9puHODUJgyOXZZnnREfaH4zSBiXuIX3P/6mG','obina',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (30,'1945-10-26','mainLee@mum.edu','MainLee',0,'Leeeeeee','$2a$10$Yrw54zSo45aLi50Rj9Ibueoy1iWCsRMGvT9ccjfWsOvnrz5ZI/oFC','mainLee',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (31,'1950-10-02','brune@mum.edu','Brune',0,'Brune','$2a$10$1VfDQSSd1wPzEy4baf78Qev/MHDpUpTFHjgwjh9PRBaEmKOSwIGo6','brune1',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (32,'2017-10-04','lester@mum.edu','Lester',0,'lester','$2a$10$AbqtZ1TyKypilCmIqwTCX.aG7RGc4G5f4YptsK2kq5KQ9zGwoXXhq','lester','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (33,'2017-10-10','lerman@mum.edu','Lerman',0,'Lerman','$2a$10$1RzKJ2o5wdK9l6Fcn.N21uxXSCnn0mT14Tct//zrtz3qNZT4SUx1G','lerman','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (34,'1950-10-02','levie@mum.edu','Levie',0,'Levie','$2a$10$z7R8heG7QX5.dp99D6DCkOuFNqvBdKY/9XYRqeC/bqT5FADTqUXPq','levie','Active');
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (35,'2017-10-10','tina@gmail.cm','TinaLee',0,'Chung','$2a$10$9ADRNyaP1DKAbJLmhpO54ud72cfm5qwj.fx0q.8830ynxd40EQ85q','tinaa','Active');INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (36,'1945-10-26','mainLee@mum.edu','MainLee',0,'Leeeeeee','$2a$10$5gTPw/l0sXAYUs9ca21HHuOxgFpoq8HrwySH0wzXiwKWqgPgZAkV6','mainLee',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (37,'2017-10-09','obina@mum.edu','Obinamakito',0,'makitoma','$2a$10$/TWwhDhUkvffVBjgGVBQRObnS7gRSUikpMndApVY5njckxSKQcIxu','obina',NULL);
+INSERT INTO user_profile (id, birthdate, email, first_name, is_active, last_name, password, user_name, user_status) VALUES (38,'1950-10-02','levie@mum.edu','Levie',0,'Levie','$2a$10$a19zFVXFen/5mzpVFqrklOg50gpryat.zSHssdV/fycwx44iU2U/6','levie',NULL);
 
 
 
 INSERT INTO role (id, description, role) VALUES (1,'Admin','Admin');
 INSERT INTO role (id, description, role) VALUES (2,'Faculty','Faculty');
-INSERT INTO role (id, description, role) VALUES (3,'Student','Student');
+INSERT INTO role (id, description, role) VALUES (4,'Student','Student');
 
 INSERT INTO faculty (id, is_availability, user_profile_id) VALUES (7,1,8);
 INSERT INTO faculty (id, is_availability, user_profile_id) VALUES (9,1,10);
@@ -61,17 +60,17 @@ INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, 
 
 -- INSERT INTO schedule (id,generated_date,status,entry_id)VALUES(1,'1999-09-09 00:00:00','OK',1);
 -- 
-INSERT   INTO course VALUES (1,395,'fundamental programming practices','FPP',1);
-INSERT   INTO course VALUES (2,401,'Modern programming practices','MPP',1);
-INSERT   INTO course VALUES (3,475,'Web application programming ','WAP',1);
-INSERT   INTO course VALUES (4,504,'Alogorithm','Algorithm',1);
-INSERT   INTO course VALUES (5,300,'Science of Creative Intelligence','SCI',0);
-INSERT   INTO course VALUES (6,572,'Modern Web Application','MWA',0);
-INSERT   INTO course VALUES (7,522,'Big Data','BIGData',0);
-INSERT   INTO course VALUES (8,544,'Enterprise Architecture','EA',0);
-INSERT   INTO course VALUES (9,425,'Software Engineering','SWE',1);
-INSERT   INTO course VALUES (10,525,'Advanced Software Development','ASD',0);
-INSERT   INTO course VALUES (11,545,'Web Application Architecture','WAA',0);
+INSERT   INTO course VALUES (1,395,4,'Fundamental programming practices','FPP',1);
+INSERT   INTO course VALUES (2,401,4,'Modern programming practices','MPP',1);
+INSERT   INTO course VALUES (3,475,4,'Web application programming ','WAP',1);
+INSERT   INTO course VALUES (4,504,4,'Alogorithm','Algorithm',1);
+INSERT   INTO course VALUES (5,300,2,'Science of Creative Intelligence','SCI',0);
+INSERT   INTO course VALUES (6,572,4,'Modern Web Application','MWA',0);
+INSERT   INTO course VALUES (7,522,4,'Big Data','BIGData',0);
+INSERT   INTO course VALUES (8,544,4,'Enterprise Architecture','EA',0);
+INSERT   INTO course VALUES (9,425,4,'Software Engineering','SWE',1);
+INSERT   INTO course VALUES (10,525,4,'Advanced Software Development','ASD',0);
+INSERT   INTO course VALUES (11,545,4,'Web Application Architecture','WAA',0);
 
 
 INSERT   INTO course_pre_req_course VALUES (2,1);

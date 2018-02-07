@@ -47,8 +47,8 @@
 						<td th:text="${blocks.blockStartDate}">BlockStartDate</td>
 						<td th:text="${blocks.blockEndDate}">BlockEndDate</td>
 						<td><ul style="list-style: none">
-								<li th:each="section:${blocks.sections}" th:inline="text">[[${section.course.courseDesc}]]
-									([[${section.course.courseCode}]])</li>
+								<li th:each="section:${blocks.sections}" th:inline="text">[[${section.course.description}]]
+									([[${section.course.courseId}]])</li>
 							</ul></td>
 
 

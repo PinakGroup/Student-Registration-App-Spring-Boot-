@@ -28,7 +28,7 @@ import edu.mum.repository.ScheduleRepository;
 import edu.mum.service.EntryService;
 import edu.mum.service.RoleService;
 import edu.mum.service.ScheduleService;
-import edu.mum.service.SectionService;
+import edu.mum.service.SectionsService;
 import edu.mum.service.StudentService;
 import edu.mum.service.UserProfileService;
 
@@ -50,7 +50,7 @@ public class StudentRegController {
 	@Autowired
 	RegisterSubsystemFacade regsubsystem;
 	@Autowired
-	SectionService sectionservice;
+	SectionsService sectionservice;
 	@Autowired
 	EntryService entryService;
 	@Autowired
@@ -192,7 +192,7 @@ public class StudentRegController {
 			return "studentregister";
 		}*/
 		UserProfile userProfile = userprofileService.LoggedInUser();
-		String str = regsubsystem.register(sectionservice.readSection(id));
+		String str = regsubsystem.register(sectionservice.getSectionById(id));
 		
 		
 		if(!(str.equalsIgnoreCase("Success"))){

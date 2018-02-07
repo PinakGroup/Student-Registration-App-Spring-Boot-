@@ -30,5 +30,7 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
 	@Query(value = "select * from Course c  where c.prerequisite_id = NULL", nativeQuery = true)
 	List<Course> getCoursesWithNoPrerequisite();
 
+	 @Query(value = "select * from Course c where c.title = ?1", nativeQuery = true)
+	public Course findCourseByTitle(String courseName);
 
 }

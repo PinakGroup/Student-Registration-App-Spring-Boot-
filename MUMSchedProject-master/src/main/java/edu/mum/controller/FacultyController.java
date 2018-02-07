@@ -22,8 +22,7 @@ import edu.mum.domain.Specialization;
 import edu.mum.service.CourseService;
 import edu.mum.service.FacultyService;
 import edu.mum.service.RoleService;
-import edu.mum.service.SectionService;
-
+import edu.mum.service.SectionsService;
 import edu.mum.service.SpecializationsService;
 import edu.mum.service.UserProfileService;
 
@@ -41,7 +40,7 @@ public class FacultyController {
 	@Autowired
 	UserProfileService userProfileService;
 	@Autowired
-	private SectionService sectionService;
+	private SectionsService sectionService;
 
 	// only admin can add new Faculty
 
@@ -212,7 +211,7 @@ public class FacultyController {
 	@GetMapping("/faculty/viewSchedule")
 	public String viewFacultySchedule(Model model) {
 		Faculty faculty = facultyService.getFacultyByUserProfile(userProfileService.LoggedInUser());
-		List<Section> facultySection = sectionService.getAllSections().stream()
+		List<Section> facultySection = sectionService.getAllSection().stream()
 				.filter(s -> s.getFaculty().equals(faculty)).collect(Collectors.toList());
 		model.addAttribute("sections", facultySection);
 		model.addAttribute("newFaculty",faculty);
@@ -223,8 +222,8 @@ public class FacultyController {
 	@GetMapping("/faculty/section/grading/{id}")
 	public String gradeStudents(@PathVariable("id") long id, Model model){
 		System.out.println(id);
-		model.addAttribute("studentList", sectionService.readSection(id).getStudents());
-		model.addAttribute("course", sectionService.readSection(id).getCourse());
+		model.addAttribute("studentList", sectionService.getSectionById(id).getStudents());
+		model.addAttribute("course", sectionService.getSectionById(id).getCourse());
 		return "gradeStudents";
 	}
 	
