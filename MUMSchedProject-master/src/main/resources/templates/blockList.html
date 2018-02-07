@@ -24,11 +24,13 @@
 <body>
 <div th:replace="fragments/header :: header"> </div>
 <div class="mainContainer">
-							<form method="post" action="/admin/addBlockForm">
-					        	<input name="id"  type="hidden" th:value="${entry == null ? 0 : entry.id }" /> <!-- ///// -->
+							 <form method="post" action="/admin/addBlockForm">
+					        	<input name="id"  type="hidden" th:value="${entry == null ? 0 : entry.id }" /> 
 					        	<input class="btn btn-primary" type="submit" value="Add Block" />
 					        	
-					        </form>
+					        </form> 
+					        
+					        
 			<table class="table">
 		    		
 				      <tr>

@@ -198,9 +198,11 @@ public class FacultyHelper {
 		// System.out.println("====== facultyHelper1 "+this.MPP.getCourseName());
 		for (int i = 0; i < mppNo; i++) {
 			if (map.size() < mppNo) {
+				
 				map.put(mppFaculty.get(rand.nextInt(mppFaculty.size())), this.MPP);
 				System.out.println("====== facultyHelper1 " + this.MPP.getTitle());
-			}
+			
+		}
 
 		}
 		for (Faculty c : map.keySet()) {

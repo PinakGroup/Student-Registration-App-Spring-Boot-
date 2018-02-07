@@ -51,13 +51,13 @@ INSERT INTO entry (id, entry_month, num_of_fpp, num_of_mpp, num_ofusstudents, nu
 INSERT INTO entry (id, entry_month, num_of_fpp, num_of_mpp, num_ofusstudents, num_of_fpp_opt, num_of_mpp_opt) VALUES (2,'February',50,50,100,0,0);
 INSERT INTO entry (id, entry_month, num_of_fpp, num_of_mpp, num_ofusstudents, num_of_fpp_opt, num_of_mpp_opt) VALUES (3,'August',50,50,100,0,0);
 
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (3,'2017-11-30','November','2017-11-01',1,0,100);
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (4,'2017-01-30','December','2017-01-01',1,1,100);
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (5,'2017-01-30','January','2017-01-01',1,2,100);
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (6,'2017-01-30','Feburary','2017-01-01',1,3,100);
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (7,'2017-01-30','March','2017-01-01',1,4,100);
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (8,'2017-01-30','April','2017-01-01',1,5,100);
-#INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (9,'2017-01-30','May','2017-01-01',1,6,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (3,'2017-11-30','November','2017-11-01',1,0,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (4,'2017-01-30','December','2017-01-01',1,1,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (5,'2017-01-30','January','2017-01-01',1,2,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (6,'2017-01-30','Feburary','2017-01-01',1,3,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (7,'2017-01-30','March','2017-01-01',1,4,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (8,'2017-01-30','April','2017-01-01',1,5,100);
+INSERT INTO block (id, block_end_date, block_month, block_start_date, entry_id, block_order, num_of_students) VALUES (9,'2017-01-30','May','2017-01-01',1,6,100);
 
 -- INSERT INTO schedule (id,generated_date,status,entry_id)VALUES(1,'1999-09-09 00:00:00','OK',1);
 -- 
