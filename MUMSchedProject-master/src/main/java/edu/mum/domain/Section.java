@@ -116,7 +116,6 @@ import javax.persistence.Table;
 @Table(name="section")
 public class Section {
 	
-	
 	@Id
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -128,7 +127,7 @@ public class Section {
 	private Course course;
 	
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
-	//@JoinColumn(name = "faculty_id")
+	@JoinColumn(name = "faculty_id")
 	private Faculty faculty;
 
 	@ManyToOne(fetch = FetchType.EAGER)
@@ -137,7 +136,6 @@ public class Section {
 
 	@ManyToMany(mappedBy = "sections", cascade = CascadeType.PERSIST)
 	List<Student> students = new ArrayList<Student>();
-
 
 	@Column(name="title")
     private String title;	
@@ -151,18 +149,18 @@ public class Section {
 	private final int numOfStudents = 25;
 	
 	public Section() {
-		}
-	
-		public Section(Block block) {
-			this.block = block;
-	
-		}
-		
-		public Section(Block block, Course course) {
-			this.block = block;
-			this.course = course;
-	
-		}
+	}
+
+	public Section(Block block) {
+		this.block = block;
+
+	}
+
+	public Section(Block block, Course course) {
+		this.block = block;
+		this.course = course;
+
+	}
 
 	public Long getId() {
 		return id;
@@ -223,7 +221,7 @@ public class Section {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
+
 	public List<Student> getStudents() {
 		return students;
 	}
@@ -231,8 +229,6 @@ public class Section {
 	public void setStudents(List<Student> students) {
 		this.students = students;
 	}
-	
-	
 
 }
 

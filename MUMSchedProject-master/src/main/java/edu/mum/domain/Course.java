@@ -112,10 +112,10 @@ public class Course {
     private String title;
 	
 	@Column(name="course_id")
-    private int courseId;	  //from string to int
+    private int courseId = 400;	  //from string to int
 
 	@Column(name="credit_hour")
-    private int creditHour;
+    private int creditHour = 2;
 	
 	@Column(name="description", length=1024)
     private String description;
@@ -123,7 +123,8 @@ public class Course {
 	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name="prerequisite_id")
 	private Course prerequisite;
-	private Boolean isPreReq;
+	
+	
 
 	public Long getId() {
 		return id;
@@ -147,9 +148,7 @@ public class Course {
 
 	public void setCourseId(int courseId) {
 		this.courseId = courseId;
-	}
-	
-	
+	}	
 
 	public int getCreditHour() {
 		return creditHour;
@@ -175,18 +174,15 @@ public class Course {
 		this.prerequisite = prerequisite;
 	}
 	
-	public Boolean getIsPreReq() {
-		return isPreReq;
-	}
-
-	public void setIsPreReq(Boolean isPreReq) {
-		this.isPreReq = isPreReq;
-	}
+	
 
 	@Override
 	public String toString() {
 		return this.courseId + " - " + this.getTitle();
 	}
+	
+	
+	
 	
 	
 

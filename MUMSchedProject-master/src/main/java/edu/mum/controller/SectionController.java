@@ -1,8 +1,5 @@
 package edu.mum.controller;
 
-
-
-
 import java.util.List;
 
 import javax.validation.Valid;
@@ -25,8 +22,6 @@ import edu.mum.service.BlockService;
 import edu.mum.service.CourseService;
 import edu.mum.service.FacultyService;
 import edu.mum.service.SectionService;
-
-
 
 //@Controller
 //@RequestMapping("/admin")
@@ -153,49 +148,57 @@ import edu.mum.service.SectionService;
 public class SectionController {
 	@Autowired
 	private CourseService courseService;
-	
+
 	@Autowired
 	private SectionService sectionService;
 
-	@RequestMapping(value = "/sections", method = RequestMethod.GET)
+	@Autowired
+	private BlockService blockService;
+
+	@Autowired
+	private FacultyService facultyService;
+
+	@RequestMapping(value = "/admin/section/all", method = RequestMethod.GET)
 	public String getAllSections(Model model) {
 		List<Section> sections = this.sectionService.getAllSections();
 		model.addAttribute("sections", sections);
-		return "section/list";
-	}
-	
-	@RequestMapping(value = "/section/{id}", method = RequestMethod.GET)
-	public String view(@PathVariable("id") Long id, Model model) {
-		model.addAttribute("courses", this.courseService.getAllCourses());
-		//get all faculty
-		//get all blocks
-		model.addAttribute("section", this.sectionService.readSection(id));
-		return "section/section";
+		return "manageSection";
 	}
 
-	@RequestMapping(value = "/section", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/section/{id}", method = RequestMethod.GET)
+	public String view(@PathVariable("id") Long id, Model model) {
+		model.addAttribute("courses", this.courseService.getAllCourses());
+		model.addAttribute("blocks", this.blockService.getAllBlock());
+		model.addAttribute("faculties", this.facultyService.getAllfaculty());
+		model.addAttribute("section", this.sectionService.readSection(id));
+		model.addAttribute("pTitle", "Edit Section");
+		return "addSection";
+	}
+
+	@RequestMapping(value = "/admin/section/add", method = RequestMethod.GET)
 	public String create(Model model) {
 		model.addAttribute("courses", this.courseService.getAllCourses());
-		//get all faculties
-		//get all blocks
-		model.addAttribute("section", new Section());		
-		return "section/section";
+		model.addAttribute("blocks", this.blockService.getAllBlock());
+		model.addAttribute("faculties", this.facultyService.getAllfaculty());
+		model.addAttribute("section", new Section());
+		model.addAttribute("pTitle", "Add Section");
+		return "addSection";
 	}
-	
-	//no error handling so far
+
+	// no error handling so far
 	@RequestMapping(value = "/section", method = RequestMethod.POST)
 	public String save(@Valid @ModelAttribute("section") Section section, BindingResult result, Model model) {
 		if (result.hasErrors()) {
-			//model.addAttribute("errors", result.getAllErrors());
+			// model.addAttribute("errors", result.getAllErrors());
 			return "section/section";
 		}
 		section = this.sectionService.save(section);
-		return "redirect:/sections";
+		return "redirect:/admin/section/all";
 	}
-	
-	@RequestMapping(value = "/section/delete/{id}", method = RequestMethod.GET)
+
+	@RequestMapping(value = "admin/section/delete/{id}", method = RequestMethod.GET)
 	public String delete(@PathVariable Long id, Model model) {
 		this.sectionService.delete(id);
-		return "redirect:/sections";
-	}	
+		return "redirect:/admin/section/all";
+	}
 }
