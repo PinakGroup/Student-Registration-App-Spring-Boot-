@@ -15,8 +15,7 @@ import edu.mum.domain.Transcript;
 import edu.mum.domain.UserProfile;
 import edu.mum.registersubsystem.RegisterSubsystem;
 import edu.mum.service.EntryService;
-import edu.mum.service.SectionService;
-
+import edu.mum.service.SectionsService;
 import edu.mum.service.StudentService;
 import edu.mum.service.UserProfileService;
 
@@ -28,7 +27,7 @@ public class RegisterSubsystemFacade implements RegisterSubsystem{
 	@Autowired
 	private StudentService studentService;
 	@Autowired
-	private SectionService sectionservice;
+	private SectionsService sectionservice;
 	@Autowired
 	UserProfileService userProfileService;
 

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 import edu.mum.service.CustomUserDetailsService;
 
-//@Component
+@Component
 public class CustomAuthenticationProvider implements AuthenticationProvider{
    
 	

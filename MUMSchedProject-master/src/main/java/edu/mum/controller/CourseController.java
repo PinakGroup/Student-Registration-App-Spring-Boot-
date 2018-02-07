@@ -18,6 +18,7 @@ public class CourseController {
 	@Autowired
 	private CourseService courseService;
 
+
 	@RequestMapping(value = "/admin/course/all", method = RequestMethod.GET)
 	public String getAllCourses(Model model) {
 		List<Course> courses = this.courseService.getAllCourses();
@@ -33,6 +34,7 @@ public class CourseController {
 		model.addAttribute("pTitle", "Edit Course");
 		return "addCourse";
 	}
+
 
 	@RequestMapping(value = "/admin/course/add", method = RequestMethod.GET)
 	public String create(Model model) {

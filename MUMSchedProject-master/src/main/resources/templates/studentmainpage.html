@@ -44,9 +44,9 @@
 			<div class="leftHeader">
 				<table>
 					<tr>
-						<td><img class="pic" alt="" th:src="@{/image/malecostume-512.png}" /></td>
+						<td><img class="pic" alt="" th:src="@{/image/profile_pic.png}" /></td>
 						<td  class="myProfile"><div class="facultyName">Student</div>
-							<div style="color:blue" th:text="${student.userprofile.firstName}"></div><div style="color:blue" th:text="${{student.userprofile.lastName}}"></div>
+							<div style="color:gray" th:text="${student.userprofile.firstName}"></div><div style="color:gray" th:text="${{student.userprofile.lastName}}"></div>
 							<hr /></td>
 							
 					</tr>
@@ -55,17 +55,15 @@
 			<div class="rightHeaderMain">
 				<div class="middleHeader">
 					<div class="myProfile">Email</div>
-					<div style="color:blue" th:text="${student.userprofile.email}"></div>
+					<div style="color:gray" th:text="${student.userprofile.email}"></div>
 					
 					<hr />
-					<div class="myProfile">Degree</div>
-					<div style="color:blue" th:text="${student.degree}"></div>
-					<hr />
+					
 					<div class="myProfile">Field of study</div>
-					<div style="color:blue" th:text="${student.field}"></div>
+					<div style="color:gray" th:text="${student.field}"></div>
 					<hr />
 				<div class="myProfile">ID</div>
-					<div style="color:blue" th:text="${student.idNumber}"></div>
+					<div style="color:gray" th:text="${student.idNumber}"></div>
 			
 			</div>
 		</div>
