@@ -26,6 +26,14 @@ public class Entry {
 	private int numOfFppOpt;
 	private int numOfMppOpt;
 	private int numOfUSstudents;
+	
+	public Entry() {
+		
+	}
+	
+	public Entry(String entryMonth) {
+		this.entryMonth = entryMonth;
+	}
 
 	@OneToMany(mappedBy = "entry", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Block> blocks;
