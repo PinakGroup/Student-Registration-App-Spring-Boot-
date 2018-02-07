@@ -12,13 +12,13 @@
 }
 .rightHeaderMain{
 	width:60%;
-	float:right;
-	margin:5px;
+
+	margin:50px;
 }
 .middleHeader{
 	width:40%;
 	height:230;
-	float:left;
+	
 	margin:5px;
 }
 .rightHeader{
