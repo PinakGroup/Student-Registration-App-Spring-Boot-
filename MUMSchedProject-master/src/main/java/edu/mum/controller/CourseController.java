@@ -18,14 +18,15 @@ public class CourseController {
 	@Autowired
 	private CourseService courseService;
 
-	@RequestMapping(value = "admin/course/all", method = RequestMethod.GET)
+
+	@RequestMapping(value = "/admin/course/all", method = RequestMethod.GET)
 	public String getAllCourses(Model model) {
 		List<Course> courses = this.courseService.getAllCourses();
 		model.addAttribute("courses", courses);
 		return "manageCourse";
 	}
 
-	@RequestMapping(value = "admin/course/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin/course/{id}", method = RequestMethod.GET)
 	public String view(@PathVariable("id") Long id, Model model) {
 		model.addAttribute("courses",
 				this.courseService.getAllCourses().stream().filter(c -> c.getId() != id).collect(Collectors.toList()));
@@ -34,7 +35,8 @@ public class CourseController {
 		return "addCourse";
 	}
 
-	@RequestMapping(value = "admin/course/add", method = RequestMethod.GET)
+
+	@RequestMapping(value = "/admin/course/add", method = RequestMethod.GET)
 	public String create(Model model) {
 		model.addAttribute("pTitle", "Add Course");
 		model.addAttribute("courses", this.courseService.getAllCourses());

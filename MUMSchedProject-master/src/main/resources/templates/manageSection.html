@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Manage Section</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div th:replace="fragments/header :: header-css"></div>
+	<div th:replace="fragments/header :: header"></div>
+	<div class="container">
+		<a th:href="@{/admin/section/add}">Add Section</a>
+		<h2>Sections</h2>
+		<div class="table-responsive ">
+			<table class="table table-striped">
+			<thead>
+				<th>Title</th>
+				<th>Course</th>
+				<th>Faculty</th>
+				<th>Block</th>
+				<th>Location</th>
+				<th>Description</th>
+				<th>Actions</th>
+			</thead>
+			<tbody>
+				<tr th:each="section: ${sections}">
+					<td th:text="${section.title}"></td>
+					<td th:text="${section.course.courseId} + ' - ' + ${section.course.title}"></td>
+					<td th:text="${section.faculty}"></td>
+					<td th:text="${section.block}"></td>
+					<td th:text="${section.location}"></td>
+					<td th:text="${section.description}"></td>
+					<td><a th:href="@{'/section/' + ${section.id}}">Edit</a>
+						&nbsp; <a th:href="@{'/section/delete/' + ${section.id}}">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+</body>
+</html>
