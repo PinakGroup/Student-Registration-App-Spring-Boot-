@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"/>
   <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
 </head>
-<body style="background-color:gray">
+<body>
 <div th:replace="fragments/header :: header-css"></div>
 <div th:replace="fragments/header :: header"> </div>
  
@@ -24,18 +24,18 @@
    <div class="container col-md-12"  style="border:thin" >
    <form  th:action="@{/admin/addstudent}" th:object="${Newstudent}" method="post"  class="form-horizontal">
 			<fieldset >
-				<h2 class="header">Student Personal Detail</h2>
-				  <div class="alert alert-danger alert-dismissable fade in" >
+				<h2 class="header">Student Information</h2>
+				  <div  class="alert alert-danger alert-dismissable fade in" >
 					 
 					<ul>
 						<li th:each="err : ${#fields.errors('*')}" th:text="${err}" />
 						
 					</ul> 
 					</div>
-				<p>
+				 <p>
 					<input type="hidden" th:field="*{id}" name="ID" />
 
-				</p>
+				</p> 
 				<div class="table">
 					
 						<label for="firstName">First Name : </label>

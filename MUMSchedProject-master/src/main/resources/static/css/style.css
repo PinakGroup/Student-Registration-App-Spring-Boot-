@@ -54,8 +54,8 @@ body, html {
 }
 
 .btn-primary {
-	display: block;
-	margin: 0 auto;
+	/* display: block;
+	margin: 0 auto; */
 	/* width: 25%; */
 }
 
@@ -70,7 +70,7 @@ body, html {
 .addForm {
 	width: 50%;
 	margin: 30px auto;
-	border-style: solid;
+	border-style: hidden;
 	border-radius: 10px;
 	padding-left: 25px;
 	padding-right: 25px;

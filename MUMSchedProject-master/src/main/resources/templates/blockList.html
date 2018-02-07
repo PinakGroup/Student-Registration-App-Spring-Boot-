@@ -26,12 +26,12 @@
 <div class="mainContainer">
 							 <form method="post" action="/admin/addBlockForm">
 					        	<input name="id"  type="hidden" th:value="${entry == null ? 0 : entry.id }" /> 
-					        	<input class="btn btn-primary" type="submit" value="Add Block" />
+					        	<input style="border: solid" class="btn btn-primary" type="submit" value="Add Block" />
 					        	
 					        </form> 
 					        
 					        
-			<table class="table">
+			<table class="table table-striped table-hover">
 		    		
 				      <tr>
 				        <th>Block Month</th>
@@ -52,7 +52,7 @@
 						        <form method="post" action="/admin/deleteBlock">
 						        	<input name="id"  type="hidden" th:value="${block.id}" />
 						        	<input name="entry_id"  type="hidden" th:value="${entry.id}" />
-						        	<input class="btn btn-danger" type="submit" value="Delete" />
+						        	<input class="btn btn-danger1" type="submit" value="Delete" />
 						        </form>
 					        </div>
 					     </td>
@@ -61,7 +61,7 @@
 						        <form method="post" action="/admin/findBlock">
 						        	<input name="id"  type="hidden" th:value="${block.id}" />
 						        	<input name="entry_id"  type="hidden" th:value="${entry.id}" />
-						        	<input class="btn btn-primary" type="submit" value="Update" />
+						        	<input class="btn btn-primary1" type="submit" value="Update" />
 						        </form>
 					        </div>
 			       		 </td>
@@ -70,7 +70,7 @@
 						        <form method="post" action="/admin/listSections">
 						        	<input name="block_id"  type="hidden" th:value="${block.id}" />
 						        	<input name="entry_id"  type="hidden" th:value="${entry.id}" />
-						        	<input class="btn btn-primary" type="submit" value="Sections" />
+						        	<input class="btn btn-primary1" type="submit" value="Sections" />
 						        </form>
 					        </div>
 			       		 </td>       
