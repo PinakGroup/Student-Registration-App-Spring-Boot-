@@ -40,6 +40,7 @@ public class Student {
 
 	private String degree;
 	private String field;
+	
 
 	public long getId() {
 		return id;
