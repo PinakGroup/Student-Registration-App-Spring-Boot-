@@ -94,7 +94,8 @@ public class FacultyHelper {
 
 	private List<Course> firstElective(int noSection) {
 		List<Course> selected = new ArrayList<>();
-		courses.stream().filter(c -> c.getIsPreReq()).filter(c -> (c.getCourseId() > 400 && c.getCourseId() < 500))
+		courses = (List<Course>) courseDao.getCoursesWithNoPrerequisite();
+		courses.stream().filter(c -> (c.getCourseId() > 400 && c.getCourseId() < 500))
 				.filter(c -> {
 					if (c.getTitle().equalsIgnoreCase("MPP"))
 						return false;

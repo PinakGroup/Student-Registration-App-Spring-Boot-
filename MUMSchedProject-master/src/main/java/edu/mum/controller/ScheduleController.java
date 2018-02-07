@@ -20,15 +20,13 @@ import edu.mum.service.ScheduleService;
 @Controller
 @RequestMapping("/admin")
 public class ScheduleController {
-
-	// inject via application.properties
+	
 	@Autowired
 	ScheduleService scheduleService;
 	@Autowired
 	ScheduleRepository scheduleDao;
 	@Autowired
 	EntryService entryService;
-	//ScheduleList
 	@RequestMapping("/schedule/list")
 	public String scheduleList(Model model) {
 

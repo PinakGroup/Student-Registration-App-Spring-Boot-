@@ -35,10 +35,10 @@
 					<td th:text="${student.userprofile.firstName}"></td>
 					<td th:text="${student.userprofile.lastName}"></td>
 					<td><a href="student.html"
-						th:href="@{|/deletestudent/${student.id}}"> <span
-							class="glyphicon glyphicon-trash"></span></a></td>
-					<td><a th:href="@{|/admin/student/update/${student.id}}"> <span
-							class="glyphicon glyphicon-pencil"></span></a></td>
+						th:href="@{|/admin/student/delete/${student.id}}"> Delete
+							</a></td>
+					<td><a th:href="@{|/admin/student/update/${student.id}}">
+						Edit</a></td>
 				</tr>
 			</table>
 		</div>
