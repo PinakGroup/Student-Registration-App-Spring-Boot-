@@ -48,6 +48,7 @@ public class MumSchedProjectApplicationTests {
      // when
         Entry found = entryRepository.findByEntryMonth(oct.getEntryMonth());
   
+   
      // then
         assertThat(found.getEntryMonth())
           .isEqualTo(oct.getEntryMonth());   
